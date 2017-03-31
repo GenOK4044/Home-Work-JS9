@@ -1,0 +1,231 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,afafaf+57 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(175,175,175,1) 57%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(175,175,175,1) 57%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(175,175,175,1) 57%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#afafaf',GradientType=0 ); /* IE6-9 */
+background-repeat: no-repeat;
+}
+	.select{
+		position: absolute;
+		margin: 80px 0px 0px 104px;
+	}
+
+
+
+	.container{
+		width: 600px;
+		height: 560px;
+		margin: 0 auto;
+		border-bottom: 2px solid;
+	}
+
+
+
+	.decor_checkbox span input[type="checkbox"]{
+            display: none;
+        }
+        .decor_checkbox{
+            clear: both;
+            height: 42px;
+            margin-bottom: 5px;
+            position: absolute;
+    		margin: -182px 0px 0px 101px;
+    		width: 250px;
+        }
+        .decor_checkbox label{
+        	font-size: 20px;
+    		font-family: Tahoma;
+    		position: absolute;
+    		margin: 8px 0px 0px 8px;
+        }
+        .decor_checkbox span {
+            display: block;
+            float:left;
+            cursor: pointer;
+            width: 42px;
+            height: 40px;
+            background: url("http://vk-book.ru/img/checkbox_sprite.png") no-repeat 0 0;
+            margin-right:10px;
+        }
+        .check_active span{
+            background-position: 0 -40px;
+        }
+
+
+
+
+	.form{
+		position: absolute;
+    	margin: -247px 0px 0px 103px;
+	}
+	.form label{
+		font-size: 20px;
+		font-family: Tahoma;
+	}
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.checkbox:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #272525;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.checkbox:checked + label:before {
+  background: #515250;;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.checkbox:checked + label:after {
+  left: 26px;
+}
+/* Показываем получение фокуса. */
+.checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+		
+
+
+
+	.menu{
+		display: block;
+	   	margin: -524px 0px 0px 1003px;
+		position: absolute;
+		background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,afafaf+57 */
+		background: rgb(76,76,76); /* Old browsers */
+	background: -webkit-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(175,175,175,1) 57%);
+	background: -o-linear-gradient(left, rgba(76,76,76,1) 0%, rgba(175,175,175,1) 57%);
+	background: linear-gradient(to right, rgba(76,76,76,1) 0%, rgba(175,175,175,1) 57%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#afafaf',GradientType=1 ); /* IE6-9 */
+		border-radius: 10px;
+	}
+	.menu li{
+		padding: 15px;
+	}
+		.menu>ul>li{
+			list-style: none;
+		}
+			.menu>ul>li>a{
+				text-decoration: none;
+				color: #2D1E1E;
+				font-family: Tahoma;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			.menu a:hover{
+				color: #868181;;
+			}
+				.sub-menu{
+					display: none;
+					padding-left: 40px;
+					background-color: rgba(167, 167, 167, 0.38);;
+				}
+					.sub-menu>li{
+						list-style: none;
+					}
+						.sub-menu>li>a{
+							text-decoration: none;
+							color: rgba(10, 10, 10, 0.79);
+							font-family:Tahoma;
+							font-size: 13px;
+							font-weight: bold;
+						}
+							.sub-sub-menu{
+								padding-left: 60px;
+								display: none;
+								background-color: rgba(167, 167, 167, 0.57);;
+							}
+								.sub-sub-menu>li{
+									list-style: none;
+								}
+									.sub-sub-menu>li>a{
+										text-decoration: none;
+										color: #292727;
+										font-family: Tahoma;
+										font-size: 11px;
+										font-weight: bold;
+									
+
+
+
+
+
+/*
+.wrapper{
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+	.box{
+		width: 200px;
+		height: 100px;
+		background-color: yellow;
+		border:2px solid black;
+		position: relative;
+		text-align: center;
+		font-size: 15px;
+		font-family: Tahoma;
+		color: black;
+		margin: 20px;
+
+	}
+	.css-box{
+		left: 0;
+	}
+	.css-box-left{
+		left: 210px;
+		font-size: 20px;
+		background-color: red;
+		transition: all 2s cubic-bezier(.27,1.54,.62,-0.72);
+	}*/
